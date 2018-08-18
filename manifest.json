@@ -1,0 +1,31 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "lean-tab-limiter@etienneguerlain.fr",
+      "strict_min_version": "58.0a1"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "description": "Limits the number of tabs that can be opened",
+  "manifest_version": 2,
+  "name": "Lean Tab Limiter",
+  "author": "Etienne Guerlain",
+  "homepage_url": "https://github.com/eguerlain/lean-tab-limiter",
+  "icons": {
+    "48": "icons/lean-tab-limiter-48.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "version": "0.1",
+  "DEFAULT_TAB_LIMIT": 6
+}
